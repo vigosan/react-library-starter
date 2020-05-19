@@ -10,6 +10,9 @@
     "lint": "eslint --ext .js ./src",
     "prettier": "prettier \"**/*.js\"",
     "storybook": "start-storybook -p 6006",
+    "test": "jest --watchAll",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watchAll",
+    "test:once": "jest",
     "validate": "npm run check:format && npm run lint"
   },
   "license": "MIT",
@@ -38,6 +41,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.2",
     "jest": "^26.0.1",
+    "jest-watch-typeahead": "^0.6.0",
     "prettier": "^2.0.5",
     "rollup": "^2.10.4",
     "rollup-plugin-commonjs": "^10.1.0"
